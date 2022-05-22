@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <body>
+
+    </body>
+
+
+
+<input type="text" id="mytxt" min="100" max="300">
+<button onclick="isStrongPassword(password)">Check Input</button>
+
+<p id="result"></p>
+<script>
+  function checkInp(){
+ const myinput = document.getElementById("mytxt");
+ if(!myinput.isStrongPassword(password))
+ {
+   document.getElementById("result").innerHTML=myinput.validationMessage;
+ }
+ else {
+   document.getElementById("result").innerHTML="Valid Input";
+ }
+
+  }
+  </script>
+ 
+ <script src="script.js" defer></script>
+
+</head>
